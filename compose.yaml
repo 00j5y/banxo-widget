@@ -1,0 +1,54 @@
+services:
+  api:
+    build: .
+    restart: unless-stopped
+    init: true
+    environment:
+      NODE_ENV: ${NODE_ENV:-production}
+      PUBLIC_URL: ${PUBLIC_URL:?Exécuter node scripts/init-config.mjs}
+      ADMIN_PASSWORD_HASH: ${ADMIN_PASSWORD_HASH:?Configuration manquante}
+      ENCRYPTION_KEY_FILE: /run/secrets/encryption_key
+      ENABLE_BANKING_APP_ID: ${ENABLE_BANKING_APP_ID:-}
+      ENABLE_BANKING_PRIVATE_KEY_FILE: /run/secrets/banking_key
+      REDIS_URL: redis://redis:6379
+    secrets: [encryption_key, banking_key]
+    ports: ["127.0.0.1:3000:3000"]
+    depends_on:
+      redis:
+        condition: service_healthy
+    networks: [private, edge]
+    read_only: true
+    tmpfs: ["/tmp:size=16m,mode=1777"]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    mem_limit: 256m
+    logging:
+      driver: json-file
+      options: {max-size: "5m", max-file: "3"}
+  redis:
+    image: redis:8-alpine
+    restart: unless-stopped
+    command: [redis-server, --appendonly, "yes", --appendfsync, everysec, --maxmemory, 128mb, --maxmemory-policy, noeviction]
+    volumes: [redis_data:/data]
+    networks: [private]
+    healthcheck:
+      test: [CMD, redis-cli, ping]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    security_opt: ["no-new-privileges:true"]
+    mem_limit: 192m
+    logging:
+      driver: json-file
+      options: {max-size: "5m", max-file: "3"}
+networks:
+  private:
+    internal: true
+  edge:
+volumes:
+  redis_data:
+secrets:
+  encryption_key:
+    file: ./secrets/encryption.key
+  banking_key:
+    file: ./secrets/enable-banking.pem
