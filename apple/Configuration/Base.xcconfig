@@ -1,0 +1,4 @@
+BANXO_BUNDLE_PREFIX = fr.example.banxo
+BANXO_APP_GROUP = group.$(BANXO_BUNDLE_PREFIX)
+BANXO_KEYCHAIN_GROUP = $(AppIdentifierPrefix)$(BANXO_BUNDLE_PREFIX).shared
+#include? "Local.xcconfig"

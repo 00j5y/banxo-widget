@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1704435911974E016E56FAC8 /* BanxoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2B7D0BBE7BF8EEBD4C00AD /* BanxoWidget.swift */; };
+		262A84AB7F77E5F866D0B927 /* DeviceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D50516BD06BA7CA36C2487 /* DeviceStore.swift */; };
+		2BD4ACC4429488E64ECC4D64 /* BalanceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A6BE4428C5B0A9556008B3 /* BalanceCard.swift */; };
+		32A51E4F6F168F33AAD3F791 /* BanxoCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9D97A1745CCD56A3403ABA2D /* BanxoCore */; };
+		3E1D08267690ADA6B9822543 /* BalanceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A6BE4428C5B0A9556008B3 /* BalanceCard.swift */; };
+		401CEB9D6B7E69054CD91B8A /* BanxoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E6C2F2699BB660D65C34D /* BanxoApp.swift */; };
+		47106555E680130DD9F29EB5 /* BanxoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2B7D0BBE7BF8EEBD4C00AD /* BanxoWidget.swift */; };
+		5A5C157AE79005C4CE7B1A1A /* BanxoMacWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AB46B8C542E6D3E3F1D9EEDD /* BanxoMacWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6EA6BBFA4CEA756FF6721718 /* BanxoIOSWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D292C387975D66DD9C0B2721 /* BanxoIOSWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7DD9429E7C6134E7F4FE1CD5 /* BanxoCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0FD85557F71C8752C6114380 /* BanxoCore */; };
+		A15B4CD435E4FC7702C0960D /* BalanceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A6BE4428C5B0A9556008B3 /* BalanceCard.swift */; };
+		B74D965CAC8662459F259B93 /* BanxoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E6C2F2699BB660D65C34D /* BanxoApp.swift */; };
+		BD2E005ADBBAEFC815F4D2C0 /* BanxoCore in Frameworks */ = {isa = PBXBuildFile; productRef = 474E9306CCFD8C797FCA413F /* BanxoCore */; };
+		BD6359FD060D0B4880A02FC1 /* DeviceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D50516BD06BA7CA36C2487 /* DeviceStore.swift */; };
+		DA21EFB204E3A7A623E99619 /* DeviceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D50516BD06BA7CA36C2487 /* DeviceStore.swift */; };
+		DF7ECADBBCD784BBC139308F /* BanxoCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0B6AD13B63E3D604A9DCE997 /* BanxoCore */; };
+		F227EECC067EABC358A2AE33 /* BalanceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A6BE4428C5B0A9556008B3 /* BalanceCard.swift */; };
+		F34E9139486B6C6A12322C11 /* DeviceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D50516BD06BA7CA36C2487 /* DeviceStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E93C93E5EE5AC3434C63B52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF3E314387A99ED416C35C3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 830B193A754E429E7DE50FEE;
+			remoteInfo = BanxoMacWidget;
+		};
+		7C2C96F3CF809A480CB2071F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF3E314387A99ED416C35C3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A0D806BA23E0357575CA0F6;
+			remoteInfo = BanxoIOSWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5C448474C5C2A80CB3CD73F8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6EA6BBFA4CEA756FF6721718 /* BanxoIOSWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC67F359933A4B39B130F38F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5A5C157AE79005C4CE7B1A1A /* BanxoMacWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		35897209BE0F1C526F73994E /* BanxoIOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BanxoIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35BE1BB8643E28DA44770B26 /* BanxoCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BanxoCore; path = BanxoCore; sourceTree = SOURCE_ROOT; };
+		565E6C2F2699BB660D65C34D /* BanxoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanxoApp.swift; sourceTree = "<group>"; };
+		58D50516BD06BA7CA36C2487 /* DeviceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStore.swift; sourceTree = "<group>"; };
+		AB46B8C542E6D3E3F1D9EEDD /* BanxoMacWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BanxoMacWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2B7D0BBE7BF8EEBD4C00AD /* BanxoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanxoWidget.swift; sourceTree = "<group>"; };
+		D292C387975D66DD9C0B2721 /* BanxoIOSWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = BanxoIOSWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6AF5C646972A2AB189A4AFA /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		F1A6BE4428C5B0A9556008B3 /* BalanceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceCard.swift; sourceTree = "<group>"; };
+		FABD1649A67D32887554C21B /* BanxoMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanxoMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F1D9040CB4C62234E2DEE3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A51E4F6F168F33AAD3F791 /* BanxoCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8B908936F0437D5BD07C4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DD9429E7C6134E7F4FE1CD5 /* BanxoCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30139851F1C7515EC32A639 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD2E005ADBBAEFC815F4D2C0 /* BanxoCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F81A7DC47BCFE60B1BE937D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF7ECADBBCD784BBC139308F /* BanxoCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		373BFDBBA78E50AFEEBC2043 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				AF2B7D0BBE7BF8EEBD4C00AD /* BanxoWidget.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		39219D0C699A02A62A475499 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				35BE1BB8643E28DA44770B26 /* BanxoCore */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		4F1E249CA7AEC13CC597EC6B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D6AF5C646972A2AB189A4AFA /* Base.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		5CE8AF099520610EF4F173E5 = {
+			isa = PBXGroup;
+			children = (
+				86DCB100B9680BBD14BAE192 /* App */,
+				4F1E249CA7AEC13CC597EC6B /* Configuration */,
+				39219D0C699A02A62A475499 /* Packages */,
+				8A4F1EB03B7F083A49760F88 /* Shared */,
+				373BFDBBA78E50AFEEBC2043 /* Widget */,
+				6435864D960EB9A25A3BA57B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6435864D960EB9A25A3BA57B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35897209BE0F1C526F73994E /* BanxoIOS.app */,
+				D292C387975D66DD9C0B2721 /* BanxoIOSWidget.appex */,
+				FABD1649A67D32887554C21B /* BanxoMac.app */,
+				AB46B8C542E6D3E3F1D9EEDD /* BanxoMacWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86DCB100B9680BBD14BAE192 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				565E6C2F2699BB660D65C34D /* BanxoApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8A4F1EB03B7F083A49760F88 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F1A6BE4428C5B0A9556008B3 /* BalanceCard.swift */,
+				58D50516BD06BA7CA36C2487 /* DeviceStore.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A0D806BA23E0357575CA0F6 /* BanxoIOSWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A956E05DDF2E32430FB4776 /* Build configuration list for PBXNativeTarget "BanxoIOSWidget" */;
+			buildPhases = (
+				23135E958AABB65063CB7912 /* Sources */,
+				6D8B908936F0437D5BD07C4C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BanxoIOSWidget;
+			packageProductDependencies = (
+				0FD85557F71C8752C6114380 /* BanxoCore */,
+			);
+			productName = BanxoIOSWidget;
+			productReference = D292C387975D66DD9C0B2721 /* BanxoIOSWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		4FA1292935E7687C193ACDE9 /* BanxoIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A647E0403C4AE1BB811CBEA /* Build configuration list for PBXNativeTarget "BanxoIOS" */;
+			buildPhases = (
+				4EDB908A2A534DDFA6C66DC3 /* Sources */,
+				A30139851F1C7515EC32A639 /* Frameworks */,
+				5C448474C5C2A80CB3CD73F8 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F0BE995FDCE85EAF3D8A635 /* PBXTargetDependency */,
+			);
+			name = BanxoIOS;
+			packageProductDependencies = (
+				474E9306CCFD8C797FCA413F /* BanxoCore */,
+			);
+			productName = BanxoIOS;
+			productReference = 35897209BE0F1C526F73994E /* BanxoIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		830B193A754E429E7DE50FEE /* BanxoMacWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F28129F5B297AA5B6AFEE290 /* Build configuration list for PBXNativeTarget "BanxoMacWidget" */;
+			buildPhases = (
+				9558EFB93BAE7CF8AA26B701 /* Sources */,
+				5F1D9040CB4C62234E2DEE3E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BanxoMacWidget;
+			packageProductDependencies = (
+				9D97A1745CCD56A3403ABA2D /* BanxoCore */,
+			);
+			productName = BanxoMacWidget;
+			productReference = AB46B8C542E6D3E3F1D9EEDD /* BanxoMacWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C78BC74C07CE3FBFACD80E67 /* BanxoMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AB8FB912D6649AC0037D1D5 /* Build configuration list for PBXNativeTarget "BanxoMac" */;
+			buildPhases = (
+				8DD6B8C7AFAF680A5836F40D /* Sources */,
+				F81A7DC47BCFE60B1BE937D9 /* Frameworks */,
+				EC67F359933A4B39B130F38F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EE12A12CB626E1843F59BBD /* PBXTargetDependency */,
+			);
+			name = BanxoMac;
+			packageProductDependencies = (
+				0B6AD13B63E3D604A9DCE997 /* BanxoCore */,
+			);
+			productName = BanxoMac;
+			productReference = FABD1649A67D32887554C21B /* BanxoMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF3E314387A99ED416C35C3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1A0D806BA23E0357575CA0F6 = {
+						ProvisioningStyle = Automatic;
+					};
+					4FA1292935E7687C193ACDE9 = {
+						ProvisioningStyle = Automatic;
+					};
+					830B193A754E429E7DE50FEE = {
+						ProvisioningStyle = Automatic;
+					};
+					C78BC74C07CE3FBFACD80E67 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DB1C3A01DB68A743364F22B3 /* Build configuration list for PBXProject "Banxo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5CE8AF099520610EF4F173E5;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				34E4C11027F7E7BAD8720926 /* XCLocalSwiftPackageReference "BanxoCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6435864D960EB9A25A3BA57B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FA1292935E7687C193ACDE9 /* BanxoIOS */,
+				1A0D806BA23E0357575CA0F6 /* BanxoIOSWidget */,
+				C78BC74C07CE3FBFACD80E67 /* BanxoMac */,
+				830B193A754E429E7DE50FEE /* BanxoMacWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23135E958AABB65063CB7912 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BD4ACC4429488E64ECC4D64 /* BalanceCard.swift in Sources */,
+				47106555E680130DD9F29EB5 /* BanxoWidget.swift in Sources */,
+				DA21EFB204E3A7A623E99619 /* DeviceStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EDB908A2A534DDFA6C66DC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E1D08267690ADA6B9822543 /* BalanceCard.swift in Sources */,
+				B74D965CAC8662459F259B93 /* BanxoApp.swift in Sources */,
+				BD6359FD060D0B4880A02FC1 /* DeviceStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DD6B8C7AFAF680A5836F40D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F227EECC067EABC358A2AE33 /* BalanceCard.swift in Sources */,
+				401CEB9D6B7E69054CD91B8A /* BanxoApp.swift in Sources */,
+				F34E9139486B6C6A12322C11 /* DeviceStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9558EFB93BAE7CF8AA26B701 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15B4CD435E4FC7702C0960D /* BalanceCard.swift in Sources */,
+				1704435911974E016E56FAC8 /* BanxoWidget.swift in Sources */,
+				262A84AB7F77E5F866D0B927 /* DeviceStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F0BE995FDCE85EAF3D8A635 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A0D806BA23E0357575CA0F6 /* BanxoIOSWidget */;
+			targetProxy = 7C2C96F3CF809A480CB2071F /* PBXContainerItemProxy */;
+		};
+		2EE12A12CB626E1843F59BBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 830B193A754E429E7DE50FEE /* BanxoMacWidget */;
+			targetProxy = 6E93C93E5EE5AC3434C63B52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DF8C89C0761CF22BE452B03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6AF5C646972A2AB189A4AFA /* Base.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/macOS.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Configuration/BanxoMacWidget-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BANXO_BUNDLE_PREFIX).mac.widget";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3CC480D02D295399BEB39903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6AF5C646972A2AB189A4AFA /* Base.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/macOS.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Configuration/BanxoMac-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BANXO_BUNDLE_PREFIX).mac";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5C2E4849CC5333B9F2DD5CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6AF5C646972A2AB189A4AFA /* Base.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/iOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Configuration/BanxoIOS-Info.plist";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BANXO_BUNDLE_PREFIX).ios";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		66D323D54B50FDF93F3259BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_BanxoAppGroup = "$(BANXO_APP_GROUP)";
+				INFOPLIST_KEY_BanxoKeychainGroup = "$(BANXO_KEYCHAIN_GROUP)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		7BF498236CF19871CB45A5A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6AF5C646972A2AB189A4AFA /* Base.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/macOS.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Configuration/BanxoMacWidget-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BANXO_BUNDLE_PREFIX).mac.widget";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A60D997205BFD6535CDE307D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_BanxoAppGroup = "$(BANXO_APP_GROUP)";
+				INFOPLIST_KEY_BanxoKeychainGroup = "$(BANXO_KEYCHAIN_GROUP)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		B7733A933B8C7B074814C29F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6AF5C646972A2AB189A4AFA /* Base.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/macOS.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Configuration/BanxoMac-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BANXO_BUNDLE_PREFIX).mac";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BB2487BA8351B11D95A3499F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6AF5C646972A2AB189A4AFA /* Base.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/iOS.entitlements;
+				INFOPLIST_FILE = "Configuration/BanxoIOSWidget-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BANXO_BUNDLE_PREFIX).ios.widget";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D3C8856A9244B9F1469204DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6AF5C646972A2AB189A4AFA /* Base.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/iOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Configuration/BanxoIOS-Info.plist";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BANXO_BUNDLE_PREFIX).ios";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF4DAFAAD7776D848F29A678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6AF5C646972A2AB189A4AFA /* Base.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/iOS.entitlements;
+				INFOPLIST_FILE = "Configuration/BanxoIOSWidget-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BANXO_BUNDLE_PREFIX).ios.widget";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A647E0403C4AE1BB811CBEA /* Build configuration list for PBXNativeTarget "BanxoIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3C8856A9244B9F1469204DC /* Debug */,
+				5C2E4849CC5333B9F2DD5CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1AB8FB912D6649AC0037D1D5 /* Build configuration list for PBXNativeTarget "BanxoMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7733A933B8C7B074814C29F /* Debug */,
+				3CC480D02D295399BEB39903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3A956E05DDF2E32430FB4776 /* Build configuration list for PBXNativeTarget "BanxoIOSWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF4DAFAAD7776D848F29A678 /* Debug */,
+				BB2487BA8351B11D95A3499F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DB1C3A01DB68A743364F22B3 /* Build configuration list for PBXProject "Banxo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66D323D54B50FDF93F3259BF /* Debug */,
+				A60D997205BFD6535CDE307D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F28129F5B297AA5B6AFEE290 /* Build configuration list for PBXNativeTarget "BanxoMacWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BF498236CF19871CB45A5A7 /* Debug */,
+				1DF8C89C0761CF22BE452B03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		34E4C11027F7E7BAD8720926 /* XCLocalSwiftPackageReference "BanxoCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = BanxoCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B6AD13B63E3D604A9DCE997 /* BanxoCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BanxoCore;
+		};
+		0FD85557F71C8752C6114380 /* BanxoCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BanxoCore;
+		};
+		474E9306CCFD8C797FCA413F /* BanxoCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BanxoCore;
+		};
+		9D97A1745CCD56A3403ABA2D /* BanxoCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BanxoCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DF3E314387A99ED416C35C3B /* Project object */;
+}

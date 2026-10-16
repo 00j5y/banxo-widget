@@ -1,0 +1,6 @@
+BanxoCore/.build/
+.build/
+Configuration/Local.xcconfig
+*.xcuserstate
+xcuserdata/
+.DS_Store

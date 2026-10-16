@@ -1,0 +1,5 @@
+// Copier vers Local.xcconfig et renseigner votre équipe Apple.
+DEVELOPMENT_TEAM =
+BANXO_BUNDLE_PREFIX = fr.votreidentifiant.banxo
+BANXO_APP_GROUP = group.$(BANXO_BUNDLE_PREFIX)
+BANXO_KEYCHAIN_GROUP = $(AppIdentifierPrefix)$(BANXO_BUNDLE_PREFIX).shared
