@@ -1,0 +1,14 @@
+{
+  "name": "banxo-widget",
+  "private": true,
+  "version": "0.1.0-dev",
+  "workspaces": ["server"],
+  "scripts": {
+    "dev": "npm run dev --workspace server",
+    "build": "npm run build --workspace server",
+    "test": "npm run test --workspace server",
+    "typecheck": "npm run typecheck --workspace server",
+    "check": "npm run typecheck && npm test && npm run build"
+  },
+  "engines": { "node": ">=24" }
+}
