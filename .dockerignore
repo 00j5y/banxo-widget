@@ -1,0 +1,10 @@
+.git
+.worktrees
+.env*
+secrets
+node_modules
+server/dist
+apple
+docs
+coverage
+*.pem

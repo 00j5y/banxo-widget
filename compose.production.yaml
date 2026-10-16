@@ -1,0 +1,25 @@
+services:
+  api:
+    environment:
+      NODE_ENV: production
+  proxy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    environment:
+      DOMAIN: ${DOMAIN:?Définir un domaine pointant vers le VPS}
+    ports: ["80:80", "443:443", "443:443/udp"]
+    volumes:
+      - ./infra/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks: [edge]
+    depends_on:
+      api:
+        condition: service_healthy
+    security_opt: ["no-new-privileges:true"]
+    logging:
+      driver: json-file
+      options: {max-size: "5m", max-file: "3"}
+volumes:
+  caddy_data:
+  caddy_config:
