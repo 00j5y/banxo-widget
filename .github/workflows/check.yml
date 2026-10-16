@@ -1,0 +1,40 @@
+name: Vérifications
+on:
+  push:
+    branches: [main, develop, 'feature/**', 'release/**', 'hotfix/**']
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  server:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: node scripts/check-commit-message.mjs --history HEAD
+      - run: npm run check
+      - run: npm audit --omit=dev --audit-level=high
+      - run: node scripts/init-config.mjs
+      - run: docker compose up -d --build --wait
+      - run: node scripts/smoke.mjs
+      - run: docker compose exec -T api node --input-type=module < scripts/check-redis.mjs
+      - run: docker compose restart redis
+      - run: node scripts/wait-ready.mjs
+      - run: node scripts/smoke.mjs
+      - if: always()
+        run: docker compose down --volumes
+  swift:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - run: swift test --package-path apple/BanxoCore
+      - name: Compiler les quatre cibles sans signature
+        run: |
+          xcodebuild -project apple/Banxo.xcodeproj -scheme BanxoIOS -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build
+          xcodebuild -project apple/Banxo.xcodeproj -scheme BanxoMac -destination 'generic/platform=macOS' CODE_SIGNING_ALLOWED=NO build
