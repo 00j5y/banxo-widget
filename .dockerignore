@@ -1,4 +1,5 @@
 .git
+.worktree
 .worktrees
 .env*
 secrets
