@@ -10,7 +10,7 @@ struct BalanceEntry: TimelineEntry {
 }
 struct BalanceProvider: TimelineProvider {
     func placeholder(in context: Context) -> BalanceEntry { BalanceEntry(date: .now, snapshot: nil) }
-    func getSnapshot(in context: Context, completion: @escaping (BalanceEntry) -> Void) {
+    func getSnapshot(in context: Context, completion: @escaping @Sendable (BalanceEntry) -> Void) {
         // La galerie ne déclenche jamais de requête bancaire et n'invente aucun solde.
         Task {
             var snapshot: BalanceSnapshot?
@@ -21,7 +21,7 @@ struct BalanceProvider: TimelineProvider {
             completion(BalanceEntry(date: .now, snapshot: snapshot))
         }
     }
-    func getTimeline(in context: Context, completion: @escaping (Timeline<BalanceEntry>) -> Void) {
+    func getTimeline(in context: Context, completion: @escaping @Sendable (Timeline<BalanceEntry>) -> Void) {
         Task {
             var entry = BalanceEntry(date: .now, snapshot: nil)
             do {
